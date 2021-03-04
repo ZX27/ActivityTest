@@ -76,7 +76,7 @@ public class FirstActivity extends AppCompatActivity {
 //                startActivity(intent);
 
                 Intent intent = new Intent(FirstActivity.this, FirstActivity.class);
-                startActivityForResult(intent, 1);
+                startActivity(intent);
             }
         });
     }
