@@ -59,21 +59,19 @@ public class FirstActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-    Log.d("FirstActivity","onDestroy");
+        Log.d("FirstActivity", "onDestroy");
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d("FirstAvtivity", this.toString());
+        Log.d("FirstActivity", "Task id is " + getTaskId());
         setContentView(R.layout.first_layout);
         Button button1 = (Button) findViewById(R.id.button_1);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent intent = new Intent(FirstActivity.this, FirstActivity.class);
-
-                Intent intent=new Intent(FirstActivity.this, SecondActivity.class);
+                Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
                 startActivity(intent);
             }
         });
