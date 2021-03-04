@@ -51,6 +51,18 @@ public class FirstActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("FirstActivity", "onRestart");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    Log.d("FirstActivity","onDestroy");
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d("FirstAvtivity", this.toString());
