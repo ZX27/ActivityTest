@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ThirdActivity extends AppCompatActivity {
+public class ThirdActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -8,7 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-public class SecondActivity extends AppCompatActivity {
+public class SecondActivity extends BaseActivity {
     @Override
     public void onBackPressed() {
         Intent intent = new Intent();
@@ -26,7 +26,7 @@ public class SecondActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(SecondActivity.this, FirstActivity.class);
+                Intent intent=new Intent(SecondActivity.this, ThirdActivity.class);
                 startActivity(intent);
             }
         });
