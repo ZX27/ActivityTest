@@ -17,7 +17,7 @@ public class ThirdActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 ActivityCollector.finishAll();
-                android.os.Process.killProcess(android.os.Process.myPid());
+                //android.os.Process.killProcess(android.os.Process.myPid());
             }
         });
 
